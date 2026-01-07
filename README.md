@@ -31,4 +31,36 @@ https://chetana-mahajan-portfolio.vercel.app
 ---
 
 ## 📂 Project Structure
+portfolio/
+├── public/
+│ ├── models/
+│ ├── bg-pattern/
+│ ├── resume.pdf
+│ └── project images
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── App.jsx
+│ └── main.jsx
+├── index.html
+├── package.json
+└── tailwind.config.js
+
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+```bash
+# Clone the repository
+git clone https://github.com/chetana987/portfolio.git
+
+# Navigate to project folder
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 
