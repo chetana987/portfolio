@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <section
       id="Connect"
-      className="py-24 px-6 flex flex-col items-center text-center max-w-4xl mx-auto"
+      className="py-16 md:py-24 px-6 flex flex-col items-center text-center max-w-4xl mx-auto"
     >
       {/* Heading */}
       <motion.h2
@@ -61,16 +61,16 @@ export default function Contact() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, delay: 0.2 }}
-        className="space-y-3 text-gray-400 mb-10"
+        className="space-y-3 text-gray-400 mb-10 w-full max-w-md"
       >
-        <p className="flex items-center justify-center gap-3">
-          <FiMail className="opacity-70" />
-          <span>mahajanchetana2004@gmail.com</span>
+        <p className="flex items-center justify-center gap-3 break-all">
+          <FiMail className="opacity-70 shrink-0" />
+          <span className="text-sm sm:text-base">mahajanchetana2004@gmail.com</span>
         </p>
 
         <p className="flex items-center justify-center gap-3">
-          <FiPhone className="opacity-70" />
-          <span>+91 7888081397</span>
+          <FiPhone className="opacity-70 shrink-0" />
+          <span className="text-sm sm:text-base">+91 7888081397</span>
         </p>
       </motion.div>
 
@@ -79,7 +79,7 @@ export default function Contact() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.4 }}
-        className="flex flex-wrap justify-center gap-8 mb-14 text-gray-300"
+        className="flex flex-wrap justify-center gap-4 sm:gap-8 mb-14 text-gray-300"
       >
         <a
           href="https://github.com/chetana987"
@@ -135,7 +135,7 @@ export default function Contact() {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="w-full px-4 py-3 rounded-lg bg-black/40 text-white outline-none"
+          className="w-full px-4 py-3 rounded-lg bg-black/40 text-white outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition"
           required
         />
 
@@ -143,7 +143,7 @@ export default function Contact() {
           type="email"
           name="email"
           placeholder="Your Email"
-          className="w-full px-4 py-3 rounded-lg bg-black/40 text-white outline-none"
+          className="w-full px-4 py-3 rounded-lg bg-black/40 text-white outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition"
           required
         />
 
@@ -151,19 +151,14 @@ export default function Contact() {
           name="message"
           placeholder="Your Message"
           rows="4"
-          className="w-full px-4 py-3 rounded-lg bg-black/40 text-white outline-none resize-none"
+          className="w-full px-4 py-3 rounded-lg bg-black/40 text-white outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition resize-none"
           required
         />
 
         <button
           type="submit"
           disabled={loading}
-          className="
-            w-full py-3 rounded-lg
-            bg-purple-500 hover:bg-purple-600
-            transition font-medium
-            disabled:opacity-60
-          "
+          className="w-full py-3 rounded-lg bg-purple-500 hover:bg-purple-600 transition font-medium disabled:opacity-60"
         >
           {loading ? "Sending..." : "Send Message"}
         </button>
