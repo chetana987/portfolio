@@ -40,7 +40,7 @@ const projects = [
     ],
     tech: ["Spring Boot", "Redis", "MySQL", "Docker", "REST APIs"],
     github: "https://github.com/chetana987/URL-Shortener",
-    demo: null,
+    demo: "https://url-shortener-production-a9f6.up.railway.app/app/index.html",
     architecture: {
       label: "Request Flow",
       layers: [

@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { FiBookOpen, FiAward, FiCode, FiTrendingUp } from "react-icons/fi";
+import { FiBookOpen, FiAward, FiCode } from "react-icons/fi";
 
 const journeyData = [
   {
-    title: "Secondary School Certificate (SSC)",
-    place: "Shroff High School, Nandurbar",
-    description: "Completed SSC with a strong academic foundation. Actively participated in volleyball and school activities, developing discipline, teamwork, and time-management skills.",
-    icon: FiBookOpen,
+    title: "Bachelor of Engineering (Computer Engineering)",
+    place: "R. C. Patel Institute of Technology · 2023 – Present",
+    description: "Strengthening understanding of data structures, databases, operating systems, and web technologies. Specializing in Java backend development with Spring Boot.",
+    icon: FiCode,
     align: "left",
   },
   {
@@ -17,18 +17,11 @@ const journeyData = [
     align: "right",
   },
   {
-    title: "Bachelor of Engineering (Computer Engineering)",
-    place: "R. C. Patel Institute of Technology · 2023 – Present",
-    description: "Strengthened understanding of data structures, databases, operating systems, and web technologies. Specializing in Java backend development with Spring Boot.",
-    icon: FiCode,
+    title: "Secondary School Certificate (SSC)",
+    place: "Shroff High School, Nandurbar",
+    description: "Completed SSC with a strong academic foundation. Actively participated in volleyball and school activities, developing discipline, teamwork, and time-management skills.",
+    icon: FiBookOpen,
     align: "left",
-  },
-  {
-    title: "Current Focus & Growth",
-    place: "",
-    description: "Building full-stack projects with Spring Boot and React. Solving DSA problems. Exploring cloud deployment and DevOps practices.",
-    icon: FiTrendingUp,
-    align: "right",
   },
 ];
 
@@ -41,7 +34,7 @@ export default function Journey() {
         transition={{ duration: 1.1 }}
         className="text-3xl md:text-4xl font-bold text-center mb-4"
       >
-        My Journey
+        Education
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
@@ -49,7 +42,7 @@ export default function Journey() {
         transition={{ delay: 0.2 }}
         className="text-gray-400 text-center mb-12 md:mb-16 max-w-xl mx-auto"
       >
-        From school to software development
+        Academic background
       </motion.p>
 
       <div className="relative">

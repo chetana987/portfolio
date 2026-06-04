@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
-import HeroModel from "./HeroModel";
+import CodeTerminal from "./CodeTerminal";
 
 export default function Hero() {
   return (
@@ -100,15 +100,26 @@ export default function Hero() {
           >
             Pune, Maharashtra, India
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.4 }}
+            className="mt-4"
+          >
+            <span className="inline-block px-3 py-1 rounded-full text-xs text-green-400 border border-green-400/30 bg-green-400/10">
+              Open to Work
+            </span>
+          </motion.div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.3 }}
-          className="hidden md:block h-[500px]"
+          className="hidden md:flex h-[500px] items-center justify-center"
         >
-          <HeroModel />
+          <CodeTerminal />
         </motion.div>
       </div>
 

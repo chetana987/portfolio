@@ -3,25 +3,25 @@ import { FiGithub, FiStar, FiGitBranch, FiCode } from "react-icons/fi";
 
 const repos = [
   {
-    name: "ChatHub-",
-    desc: "Real-time chat application with Socket.IO",
+    name: "Inventra",
+    desc: "AI-Powered Inventory Management System",
     stars: 0,
-    lang: "JavaScript",
-    url: "https://github.com/chetana987/ChatHub-",
-  },
-  {
-    name: "Smart-Queue-Management",
-    desc: "MERN-based hospital queue system",
-    stars: 0,
-    lang: "JavaScript",
+    lang: "Java",
     url: "https://github.com/chetana987",
   },
   {
-    name: "Blood-Group-Detection",
-    desc: "Fingerprint-based blood group prediction",
+    name: "URL-Shortener",
+    desc: "Custom short URLs with Redis caching & analytics",
     stars: 0,
-    lang: "Python",
-    url: "https://github.com/chetana987",
+    lang: "Java",
+    url: "https://github.com/chetana987/URL-Shortener",
+  },
+  {
+    name: "Online-Assessment-Platform",
+    desc: "Timer-based online test engine with REST APIs",
+    stars: 0,
+    lang: "Java",
+    url: "https://github.com/chetana987/Online-Assessment-Platform",
   },
 ];
 

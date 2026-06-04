@@ -28,7 +28,7 @@ export default function Footer() {
           </p>
           <p className="flex items-center justify-center md:justify-start gap-2">
             <FiMapPin className="opacity-70" />
-            Nandurbar, Maharashtra, India
+            Pune, Maharashtra, India
           </p>
         </div>
 

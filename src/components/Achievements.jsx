@@ -22,9 +22,9 @@ const achievements = [
   },
   {
     icon: FiTarget,
-    stat: "100%",
-    label: "Commitment to Quality",
-    desc: "Clean, maintainable, tested code",
+    stat: "Hackathon",
+    label: "Participant",
+    desc: "Collaborated on time-bound problem solving",
   },
 ];
 

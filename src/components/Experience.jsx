@@ -1,5 +1,28 @@
 import { motion } from "framer-motion";
-import { FiCheckCircle } from "react-icons/fi";
+import { FiCheckCircle, FiBriefcase } from "react-icons/fi";
+
+const internships = [
+  {
+    company: "Celebal Technologies",
+    role: "Frontend Intern",
+    period: "Jun 2025 – Aug 2025 · Remote",
+    items: [
+      "Built optimized React components improving load time.",
+      "Integrated REST APIs and handled asynchronous operations.",
+      "Worked in an Agile team using Git workflows and CI/CD.",
+    ],
+  },
+  {
+    company: "ProWorld Technology",
+    role: "Software Intern",
+    period: "Jun 2022 – Jul 2022 · Nashik, India",
+    items: [
+      "Developed modular Java utilities, reducing manual work by 25%.",
+      "Refactored 400+ lines of code for performance improvements.",
+      "Participated in Agile sprints, testing, and deployment.",
+    ],
+  },
+];
 
 const experiences = [
   {
@@ -45,7 +68,7 @@ export default function Experience() {
         transition={{ duration: 1 }}
         className="text-3xl md:text-4xl font-bold text-center mb-4"
       >
-        Practical Experience
+        Experience
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
@@ -53,31 +76,76 @@ export default function Experience() {
         transition={{ delay: 0.2 }}
         className="text-gray-400 text-center mb-12 md:mb-16 max-w-xl mx-auto"
       >
-        Hands-on experience gained through building real-world projects
+        Professional internships and hands-on development experience
       </motion.p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {experiences.map((exp, idx) => (
+      {/* Internships */}
+      <div className="space-y-8 mb-16">
+        {internships.map((internship, idx) => (
           <motion.div
-            key={exp.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: idx * 0.1 }}
-            className="rounded-2xl bg-white/5 border border-white/10 p-6"
+            key={internship.company}
+            initial={{ opacity: 0, x: idx === 0 ? -30 : 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: idx * 0.15 }}
+            className="rounded-2xl bg-white/5 border border-white/10 p-6 hover:border-purple-500/30 transition"
           >
-            <h3 className="text-lg font-semibold text-purple-300 mb-4">
-              {exp.title}
-            </h3>
-            <ul className="space-y-3">
-              {exp.items.map((item, i) => (
-                <li key={i} className="flex gap-3 text-sm text-gray-300">
-                  <FiCheckCircle className="text-purple-400 mt-0.5 shrink-0" size={16} />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="flex items-start gap-4">
+              <div className="p-3 rounded-xl bg-purple-500/10 shrink-0">
+                <FiBriefcase className="text-purple-400" size={20} />
+              </div>
+              <div className="min-w-0">
+                <h3 className="text-lg font-semibold">
+                  {internship.company}
+                  <span className="text-purple-400"> — {internship.role}</span>
+                </h3>
+                <p className="text-sm text-gray-500 mt-0.5">{internship.period}</p>
+                <ul className="mt-4 space-y-2">
+                  {internship.items.map((item, i) => (
+                    <li key={i} className="flex gap-3 text-sm text-gray-300">
+                      <FiCheckCircle className="text-purple-400 mt-0.5 shrink-0" size={14} />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </motion.div>
         ))}
+      </div>
+
+      {/* Project-based experience */}
+      <div>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="text-xl font-semibold text-center text-gray-300 mb-8"
+        >
+          Core Competencies
+        </motion.h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {experiences.map((exp, idx) => (
+            <motion.div
+              key={exp.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              className="rounded-2xl bg-white/5 border border-white/10 p-6"
+            >
+              <h4 className="text-lg font-semibold text-purple-300 mb-4">
+                {exp.title}
+              </h4>
+              <ul className="space-y-3">
+                {exp.items.map((item, i) => (
+                  <li key={i} className="flex gap-3 text-sm text-gray-300">
+                    <FiCheckCircle className="text-purple-400 mt-0.5 shrink-0" size={16} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
