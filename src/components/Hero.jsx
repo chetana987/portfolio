@@ -64,7 +64,7 @@ export default function Hero() {
             className="flex items-center gap-4 mt-8"
           >
             <a
-              href="/resume.pdf"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition shadow-lg shadow-purple-600/30"
