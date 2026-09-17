@@ -4,12 +4,12 @@ import { FiCheckCircle, FiBriefcase } from "react-icons/fi";
 const internships = [
   {
     company: "Celebal Technologies",
-    role: "Frontend Intern",
-    period: "Jun 2025 – Aug 2025 · Remote",
+    role: "Software Development Intern",
+    period: "Jun 2025 – Nov 2025 · Pune, India",
     items: [
-      "Built optimized React components improving load time.",
-      "Integrated REST APIs and handled asynchronous operations.",
-      "Worked in an Agile team using Git workflows and CI/CD.",
+      "Developed and enhanced application features, implemented backend business logic, integrated REST APIs, and handled asynchronous operations.",
+      "Worked with database operations, performed functional testing, debugged application issues, and contributed to improving application reliability and performance.",
+      "Worked in an Agile Scrum team using Git workflows and CI/CD practices, participated in code reviews, and collaborated with cross-functional teams to maintain code quality.",
     ],
   },
   {
