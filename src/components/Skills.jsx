@@ -1,7 +1,32 @@
 import { motion } from "framer-motion";
-import { FiCheck, FiCpu, FiDatabase, FiCode, FiTool } from "react-icons/fi";
+import { FiServer, FiLayout, FiDatabase, FiTool, FiCheck, FiCpu } from "react-icons/fi";
 
 const skillGroups = [
+  {
+    title: "Backend Development",
+    icon: FiServer,
+    items: ["Java", "Spring Boot", "Spring Security", "REST APIs", "Hibernate/JPA"],
+  },
+  {
+    title: "Frontend Development",
+    icon: FiLayout,
+    items: ["React.js", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "API & Database",
+    icon: FiDatabase,
+    items: [
+      "API Testing using Postman",
+      "SQL / Database Testing",
+      "MySQL",
+      "Redis",
+    ],
+  },
+  {
+    title: "Tools",
+    icon: FiTool,
+    items: ["Git", "GitHub", "Docker", "Maven", "CI/CD (GitHub Actions)", "AWS"],
+  },
   {
     title: "Testing",
     icon: FiCheck,
@@ -23,36 +48,6 @@ const skillGroups = [
     title: "Automation",
     icon: FiCpu,
     items: ["Selenium WebDriver with Java", "TestNG"],
-  },
-  {
-    title: "API & Database",
-    icon: FiDatabase,
-    items: [
-      "API Testing using Postman",
-      "SQL / Database Testing",
-      "MySQL",
-      "Redis",
-    ],
-  },
-  {
-    title: "Development",
-    icon: FiCode,
-    items: [
-      "Java",
-      "Spring Boot",
-      "Spring Security",
-      "REST APIs",
-      "Hibernate/JPA",
-      "React.js",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-  },
-  {
-    title: "Tools",
-    icon: FiTool,
-    items: ["Git", "GitHub", "Docker", "Maven", "CI/CD (GitHub Actions)", "AWS"],
   },
 ];
 
